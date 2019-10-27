@@ -12,10 +12,22 @@
       crossorigin="anonymous"></script>
     <script src="jquery.csv.js"></script>
     <script src="heatmap.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIrLMlssXBf2Y3U9p7doADTFNbC-fi4Wo&&libraries=visualization&callback=initMap"async ></script>
     
   </head>
   <body>
     <div id="map"></div>
+    <div id="menu">
+      <h1>Tools</h1>
+      <div class="sub-menu">
+        <h2>Display Mode</h2>
+        <form id="display-modes">
+          <input type="radio" class="display-mode" name="display-mode" value="heatmap" checked> Heatmap<br>
+          <input type="radio" class="display-mode" name="display-mode" value="circles"> Circles<br>
+          <input type="radio" class="display-mode" name="display-mode" value="clusters"> Marker Clusters
+        </form>
+      </div>
+    </div>
   </body>
 </html>
